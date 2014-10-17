@@ -1,0 +1,5 @@
+INCLUDEPATH += $$PWD
+INCLUDEPATH += $$PWD/inc/
+DEPENDPATH += $$PWD
+
+INCLUDEPATH += $$PWD/inc/BreakpadHandler.h

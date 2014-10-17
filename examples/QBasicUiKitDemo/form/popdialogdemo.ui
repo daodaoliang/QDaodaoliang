@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PopDialogDemo</class>
+ <widget class="QWidget" name="PopDialogDemo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PopDialogDemo</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 127);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,10,0">
+   <item>
+    <widget class="QBasicFormSnowLabel" name="label_2">
+     <property name="styleSheet">
+      <string notr="true">font: 75 18pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>surprise</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">image: url(:/image/icon_birthday-cake.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	color:rgb(255,255,255);
+	border-radius:3px;
+	background-color:rgb(0,109,204);
+	font-family:Arial;
+}
+QPushButton:hover
+{
+	background-color:rgb(0 ,119, 224 );
+}
+QPushButton:pressed
+{
+	background-color:rgb(0 ,149 ,255  );
+}</string>
+     </property>
+     <property name="text">
+      <string>Pause</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QBasicFormSnowLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">qbasicformsnowlabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,39 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="993" measuredH="348" mockupW="657" mockupH="140">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::TextArea" x="336" y="255" w="158" h="32" measuredW="200" measuredH="140" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>UI%u5B50%u6A21%u5757</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::TextArea" x="336" y="208" w="462" h="32" measuredW="200" measuredH="140" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>%u6CE8%u518C%u7801%u4EA7%u751F%u9A8C%u8BC1%u6A21%u5757</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::TextArea" x="509" y="255" w="136" h="32" measuredW="200" measuredH="140" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>%u7528%u6237%u4FE1%u606F%u83B7%u53D6%u6A21%u5757</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::TextArea" x="336" y="308" w="462" h="32" measuredW="200" measuredH="140" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>%u57FA%u7840%u52A0%u89E3%u5BC6%u6A21%u5757</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::VCurly" x="813" y="208" w="-1" h="-1" measuredW="180" measuredH="140" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%u6A21%u5757%u67B6%u6784</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::TextArea" x="660" y="256" w="138" h="31" measuredW="200" measuredH="140" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>%u6821%u65F6%u6A21%u5757</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -1,0 +1,12 @@
+#ifndef QBASEUIKIT_GLOBAL_H
+#define QBASEUIKIT_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(QBASEUIKIT_LIBRARY)
+#  define QBASEUIKITSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define QBASEUIKITSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // QBASEUIKIT_GLOBAL_H
