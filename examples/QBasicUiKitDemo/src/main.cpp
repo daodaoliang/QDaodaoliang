@@ -10,28 +10,25 @@
 int main(int argc, char *argv[])
 {
     //crashDump 方案[1]
-    QApplication app(argc, argv);
-    BreakpadQt::GlobalHandler *handler = BreakpadQt::GlobalHandler::instance();
-    handler->setDumpPath(qApp->applicationDirPath());
-    qDebug()<<QDir::tempPath();
+    //    QApplication app(argc, argv);
+    //    BreakpadQt::GlobalHandler *handler = BreakpadQt::GlobalHandler::instance();
+    //    handler->setDumpPath(qApp->applicationDirPath());
+    //    qDebug()<<QDir::tempPath();
     //MiniDump 方案[2]
-    //    QtSingleApplication app("daodaoliang",argc, argv);
-    //    MiniDumper::Instance().Install();
-    //    if(app.sendMessage("Hi I am daodaoliang~")){
-    //        qDebug()<<"daodaoliang";
-    //        return 0;
-    //    }
-
+    QtSingleApplication app("daodaoliang",argc, argv);
+    MiniDumper::Instance().Install();
+    if(app.sendMessage("Hi I am daodaoliang~")){
+        qDebug()<<"daodaoliang";
+        return 0;
+    }
     //PopDemo
     PopDialogDemo demoPopDialog;
     demoPopDialog.showPopDialog(5);
-
     //miniWidgetDemo
     MiniIconWidgetDemo demoMiniWidget;
     demoMiniWidget.show();
-
     //MiniDump 方案[2]
-    //    app.setActivationWindow(&w);
+    app.setActivationWindow(&demoPopDialog);
     //崩溃测试
     //    int *tempTest = NULL;
     //    qMemCopy(tempTest,0,100);
