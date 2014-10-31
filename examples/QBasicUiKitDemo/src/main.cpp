@@ -6,6 +6,7 @@
 #include "mini_dump.h"
 #include "BreakpadHandler.h"
 #include "miniiconwidgetdemo.h"
+#include "formfadewidgetdemo.h"
 
 int main(int argc, char *argv[])
 {
@@ -27,6 +28,9 @@ int main(int argc, char *argv[])
     //miniWidgetDemo
     MiniIconWidgetDemo demoMiniWidget;
     demoMiniWidget.show();
+    //fadewidgetDemo
+    QBasicFormFadeWidget demoFadeWidget;
+    demoFadeWidget.beginFadeShow(10);
     //MiniDump 方案[2]
     app.setActivationWindow(&demoPopDialog);
     //崩溃测试

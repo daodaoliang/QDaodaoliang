@@ -14,13 +14,16 @@ TEMPLATE = app
 
 SOURCES += ./src/main.cpp \
            ./src/popdialogdemo.cpp \
-           ./src/miniiconwidgetdemo.cpp
+           ./src/miniiconwidgetdemo.cpp \
+           ./src/formfadewidgetdemo.cpp
 
 HEADERS  += ./inc/popdialogdemo.h \
-            ./inc/miniiconwidgetdemo.h
+            ./inc/miniiconwidgetdemo.h \
+            ./inc/formfadewidgetdemo.h
 
 FORMS    += ./form/popdialogdemo.ui \
-            ./form/miniiconwidgetdemo.ui
+            ./form/miniiconwidgetdemo.ui \
+            ./form/formfadewidgetdemo.ui
 
 RESOURCES += ./res/QBasicUiKitResource.qrc
 

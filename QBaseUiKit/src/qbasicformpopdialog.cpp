@@ -66,7 +66,6 @@ void PopDialog::showAnimation(){
 void PopDialog::animationValueChanged(QVariant param_value)
 {
     QPoint tempValue = param_value.toPoint();
-    qDebug()<<"animationValueChanged:"<<tempValue;
 }
 
 void PopDialog::closeAnimation(){
