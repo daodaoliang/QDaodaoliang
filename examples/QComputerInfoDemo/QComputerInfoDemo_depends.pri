@@ -1,0 +1,2 @@
+INCLUDEPATH += ./../../QComputerInfo/inc/
+
