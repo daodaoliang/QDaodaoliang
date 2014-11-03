@@ -3,4 +3,5 @@ CONFIG += ordered
 SUBDIRS += \
     ./Dump/crashdump \
     QBaseUiKit \
+    QComputerInfo \
     examples \

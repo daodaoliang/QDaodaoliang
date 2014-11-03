@@ -27,10 +27,12 @@ int main(int argc, char *argv[])
     demoPopDialog.showPopDialog(5);
     //miniWidgetDemo
     MiniIconWidgetDemo demoMiniWidget;
+    demoMiniWidget.setGeometry(0,30,400,300);
     demoMiniWidget.show();
     //fadewidgetDemo
     QBasicFormFadeWidget demoFadeWidget;
-    demoFadeWidget.beginFadeShow(10);
+    demoFadeWidget.setGeometry(400,30,400,300);
+    demoFadeWidget.beginFadeShow(3);
     //MiniDump 方案[2]
     app.setActivationWindow(&demoPopDialog);
     //崩溃测试

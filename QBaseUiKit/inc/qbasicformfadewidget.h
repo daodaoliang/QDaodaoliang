@@ -12,13 +12,13 @@
  *  淡入淡出的widget基类
  */
 
-class QBASEUIKITSHARED_EXPORT QBasicFormFadeWidget : public QWidget
+class QBASEUIKITSHARED_EXPORT QBasicFormFadeWidget : public QBasicFormMoveableWidget
 {
     Q_OBJECT
     Q_PROPERTY(qreal opacity READ getopacity WRITE setopacity NOTIFY opacityChanged)
 
 public:
-    explicit QBasicFormFadeWidget(QWidget *parent = 0);
+    explicit QBasicFormFadeWidget(QBasicFormMoveableWidget *parent = 0);
 
 signals:
     void opacityChanged(qreal param_opacity);
