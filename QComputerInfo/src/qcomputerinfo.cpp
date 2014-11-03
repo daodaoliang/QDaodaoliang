@@ -21,11 +21,11 @@ QString QComputerInfo::getMAC(bool &param_bool)
 QString QComputerInfo::getVolumeSerialNumber(bool &param_bool)
 {
     QString lpRootPathName = "C:\\";
-    LPTSTR lpVolumeNameBuffer=new TCHAR[12];
+    LPTSTR lpVolumeNameBuffer = new TCHAR[12];
     DWORD nVolumeNameSize=12;
     DWORD VolumeSerialNumber;
     DWORD MaximumComponentLength;
-    LPTSTR lpFileSystemNameBuffer=new TCHAR[10];
+    LPTSTR lpFileSystemNameBuffer = new TCHAR[10];
     DWORD nFileSystemNameSize=10;
     DWORD FileSystemFlags;
     GetVolumeInformation((LPTSTR)lpRootPathName.utf16(),
@@ -48,4 +48,12 @@ QString QComputerInfo::getHardDiskSerialNumber(bool &param_bool)
     }
     param_bool = false;
     return "";
+}
+
+QString QComputerInfo::getCPUCount(bool &param_bool)
+{
+    SYSTEM_INFO systemInfo;
+    GetSystemInfo(&systemInfo);
+    param_bool = true;
+    return QString::number(systemInfo.dwNumberOfProcessors);
 }

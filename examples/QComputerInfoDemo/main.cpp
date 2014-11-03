@@ -1,6 +1,8 @@
 ﻿#include <QCoreApplication>
 #include "qcomputerinfo.h"
+
 #pragma comment(lib,"./../../daodaoliang/bin/QComputerInfo.lib")
+
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
@@ -12,5 +14,7 @@ int main(int argc, char *argv[])
     qDebug()<<"VolumeSerialNumber get result:"<<flag;
     qDebug()<<"HardDiskSerialNumber:"<<temp_computer_info.getHardDiskSerialNumber(flag);
     qDebug()<<"HardDiskSerialNumber get result:"<<flag;
+    qDebug()<<"NumberOfProcessors:"<<temp_computer_info.getCPUCount(flag);
+    qDebug()<<"NumberOfProcessors get result:"<<flag;
     return a.exec();
 }

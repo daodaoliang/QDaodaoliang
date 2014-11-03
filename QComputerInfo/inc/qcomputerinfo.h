@@ -36,7 +36,7 @@ public:
 
     /*!
      * \brief getVolumeSerialNumber
-     *  获取磁盘序列号
+     *  获取C磁盘序列号
      * \param param_bool
      *  是否获取成功
      * \return
@@ -53,6 +53,16 @@ public:
      *  硬盘序列号
      */
     QString getHardDiskSerialNumber(bool &param_bool);
+
+    /*!
+     * \brief getCPUCount
+     *  获取CPU个数
+     * \param
+     *  是否获取成功
+     * \return
+     *  CPU个数
+     */
+    QString getCPUCount(bool &param_bool);
 };
 
 #endif // QCOMPUTERINFO_H
