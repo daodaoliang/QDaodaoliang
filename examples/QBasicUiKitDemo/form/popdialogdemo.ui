@@ -23,7 +23,7 @@
       <string notr="true">font: 75 18pt &quot;微软雅黑&quot;;</string>
      </property>
      <property name="text">
-      <string>surprise</string>
+      <string>Happy birthday!</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>

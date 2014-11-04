@@ -37,6 +37,16 @@ public:
      */
     QString getSHA1Harsh(const QString &param_data);
 
+    /*!
+     * \brief stringByKaiser
+     *  采用凯撒加密方式加密字符串
+     * \param param_data
+     *  原始数据
+     * \param param_key
+     *  加密密钥
+     * \return
+     */
+    bool stringByKaiser(QString &param_data,quint8 param_key);
 };
 
 #endif // QENCRYPTIONKIT_H

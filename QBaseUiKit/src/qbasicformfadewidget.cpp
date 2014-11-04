@@ -24,9 +24,9 @@ qreal QBasicFormFadeWidget::getopacity()
 
 void QBasicFormFadeWidget::beginFadeShow(quint32 param_seconds)
 {
-    show();
     show_animation_->setDuration(param_seconds * 1000);
     show_animation_->setStartValue(0);
+    show();
     show_animation_->setEndValue(1);
     show_animation_->start();
 }

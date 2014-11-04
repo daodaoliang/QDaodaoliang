@@ -30,9 +30,15 @@ int main(int argc, char *argv[])
     demoMiniWidget.setGeometry(0,30,400,300);
     demoMiniWidget.show();
     //fadewidgetDemo
-    QBasicFormFadeWidget demoFadeWidget;
+    FormFadeWidgetDemo demoFadeWidget;
     demoFadeWidget.setGeometry(400,30,400,300);
     demoFadeWidget.beginFadeShow(3);
+    //QEncryptionKit
+    QEncryptionKit demoEncryptionKit;
+    QString tempStr("abcdefghijkLMNOPQRSTUVWXYZ0123456789");
+    qDebug()<<"string:"<<tempStr;
+    demoEncryptionKit.stringByKaiser(tempStr,2);
+    qDebug()<<"Kaiser encode:"<<tempStr;
     //MiniDump 方案[2]
     app.setActivationWindow(&demoPopDialog);
     //崩溃测试
