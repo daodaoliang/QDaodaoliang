@@ -16,5 +16,10 @@ int main(int argc, char *argv[])
     qDebug()<<"HardDiskSerialNumber get result:"<<flag;
     qDebug()<<"NumberOfProcessors:"<<temp_computer_info.getCPUCount(flag);
     qDebug()<<"NumberOfProcessors get result:"<<flag;
+    qDebug()<<"SysVersion :"<<temp_computer_info.getSysVersion(flag);
+    qDebug()<<"SysVersion get result:"<<flag;
+    int m_total_size , m_available = 0;
+    qDebug()<<"Disksize get result:"<<temp_computer_info.getDiskSize(m_total_size,m_available);
+    qDebug()<<"Disksize  :"<<"m_total_size:"<<m_total_size<<" m_available:"<<m_available;
     return a.exec();
 }

@@ -67,3 +67,26 @@ QString QComputerInfo::getCPUCount(bool &param_bool)
     param_bool = true;
     return QString::number(systemInfo.dwNumberOfProcessors);
 }
+
+QString QComputerInfo::getSysVersion(bool &param_bool)
+{
+    return QString::number((int)QSysInfo::windowsVersion(),16);
+}
+
+bool QComputerInfo::getDiskSize(int &param_total, int &param_available)
+{
+    long long freeBytesAvail=0,totalBytes=0,freeBytes=0;
+    bool result_flag;
+    result_flag=GetDiskFreeSpaceEx((LPCWSTR)QString("C:").utf16(),(PULARGE_INTEGER)&freeBytesAvail,
+                                   (PULARGE_INTEGER)&totalBytes,(PULARGE_INTEGER)&freeBytes);
+    if(result_flag)
+    {
+        param_total = totalBytes/(1024*1024);
+        param_available = freeBytesAvail/(1024*1024);
+        return true;
+    } else {
+        param_total = -1;
+        param_available = -1;
+        return false;
+    }
+}

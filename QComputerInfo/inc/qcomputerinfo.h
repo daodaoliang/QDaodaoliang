@@ -9,6 +9,7 @@
 #include <QHostAddress>
 #include <QNetworkInterface>
 #include <QLibrary>
+#include <QSysInfo>
 
 /*!
  * \brief The QComputerInfo class
@@ -63,6 +64,28 @@ public:
      *  CPU个数
      */
     QString getCPUCount(bool &param_bool);
+
+    /*!
+     * \brief getSysVersion
+     *  获取系统版本
+     * \param param_bool
+     *  是否获取成功
+     * \return
+     *  系统版本
+     */
+    QString getSysVersion(bool &param_bool);
+
+    /*!
+     * \brief getDiskSize
+     *  获取系统硬盘容量
+     * \param param_total
+     *  总容量
+     * \param param_available
+     *  可用容量
+     * \return
+     *  是否获取成功
+     */
+    bool getDiskSize(int &param_total,int &param_available);
 };
 
 #endif // QCOMPUTERINFO_H
