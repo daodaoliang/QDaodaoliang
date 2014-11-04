@@ -103,3 +103,21 @@ QPushButton[blueButton="true"]:pressed
 效果图如下所示：
 
 ![blueButton](./皮肤模块说明文档的资源文件/blueButton.png)
+
+## QProgressBar
+
+> * 淡红色进度条
+
+```css
+QProgressBar{  
+    color : solid gray;  
+    border: 2px solid gray;  
+    border-radius: 5px;  
+    background: transparent;  
+    padding: 0px;  
+    text-align : center ;  
+}  
+QProgressBar::chunk{  
+    background: #B22222;  
+}  
+```
