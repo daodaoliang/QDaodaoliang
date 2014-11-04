@@ -37,8 +37,10 @@ int main(int argc, char *argv[])
     QEncryptionKit demoEncryptionKit;
     QString tempStr("abcdefghijkLMNOPQRSTUVWXYZ0123456789");
     qDebug()<<"string:"<<tempStr;
-    demoEncryptionKit.stringByKaiser(tempStr,2);
+    demoEncryptionKit.stringByKaiser(tempStr,-2);
     qDebug()<<"Kaiser encode:"<<tempStr;
+    demoEncryptionKit.stringByKaiser(tempStr,2);
+    qDebug()<<"Kaiser dncode:"<<tempStr;
     //MiniDump 方案[2]
     app.setActivationWindow(&demoPopDialog);
     //崩溃测试

@@ -46,7 +46,7 @@ public:
      *  加密密钥
      * \return
      */
-    bool stringByKaiser(QString &param_data,quint8 param_key);
+    bool stringByKaiser(QString &param_data,qint8 param_key);
 };
 
 #endif // QENCRYPTIONKIT_H
