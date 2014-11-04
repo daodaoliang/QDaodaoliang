@@ -5,3 +5,4 @@ SUBDIRS += \
     QBaseUiKit \
     QComputerInfo \
     examples \
+    QEncryptionKit

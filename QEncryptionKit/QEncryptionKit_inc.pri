@@ -1,0 +1,2 @@
+
+HEADERS += inc/qencryptionkit.h

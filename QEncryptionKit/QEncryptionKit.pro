@@ -1,24 +1,31 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2014-11-03T15:53:54
+# Project created by QtCreator 2014-11-04T10:23:13
 #
 #-------------------------------------------------
 
-QT       += network
 QT       -= gui
 
-TARGET = QComputerInfo
+TARGET = QEncryptionKit
 TEMPLATE = lib
 
-DEFINES += QCOMPUTERINFO_LIBRARY
+DEFINES += QENCRYPTIONKIT_LIBRARY
 
-include(./QComputerInfo_depends.pri)
-include(./QComputerInfo_others.pri)
-include(./QComputerInfo_inc.pri)
+include(./QEncryptionKit_depends.pri)
+include(./QEncryptionKit_others.pri)
+include(./QEncryptionKit_inc.pri)
 
 INCLUDEPATH += ./inc/ \
 
-win32 {
+unix:!symbian {
+    maemo5 {
+        target.path = /opt/usr/lib
+    } else {
+        target.path = /usr/lib
+    }
+    INSTALLS += target
+}
+win32{
     message(the QComputerInfo will create in folder: ../daodaoliang)
         DESTDIR = ../daodaoliang/bin
 
@@ -30,4 +37,3 @@ win32 {
 
         OBJECTS_DIR = ../daodaoliang/obj
 }
-
