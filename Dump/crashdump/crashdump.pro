@@ -5,13 +5,13 @@ win32 {
     message(the crashdump will create in folder: ../daodaoliang)
         DESTDIR = ../../daodaoliang/bin
 
-        MOC_DIR = ../../daodaoliang/moc
+        MOC_DIR = ../../daodaoliang/moc/gbreakpad
 
-        RCC_DIR = ../../daodaoliang/rcc
+        RCC_DIR = ../../daodaoliang/rcc/gbreakpad
 
-        UI_DIR = ../../daodaoliang/ui
+        UI_DIR = ../../daodaoliang/ui/gbreakpad
 
-        OBJECTS_DIR = ../../daodaoliang/obj
+        OBJECTS_DIR = ../../daodaoliang/obj/gbreakpad
 }
 
 ## google breakpad svn 969

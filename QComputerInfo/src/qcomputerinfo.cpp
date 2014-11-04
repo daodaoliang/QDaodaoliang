@@ -70,6 +70,7 @@ QString QComputerInfo::getCPUCount(bool &param_bool)
 
 QString QComputerInfo::getSysVersion(bool &param_bool)
 {
+    param_bool = true;
     return QString::number((int)QSysInfo::windowsVersion(),16);
 }
 

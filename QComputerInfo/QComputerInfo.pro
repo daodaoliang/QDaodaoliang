@@ -22,12 +22,12 @@ win32 {
     message(the QComputerInfo will create in folder: ../daodaoliang)
         DESTDIR = ../daodaoliang/bin
 
-        MOC_DIR = ../daodaoliang/moc
+        MOC_DIR = ../daodaoliang/moc/QComputerInfo
 
-        RCC_DIR = ../daodaoliang/rcc
+        RCC_DIR = ../daodaoliang/rcc/QComputerInfo
 
-        UI_DIR = ../daodaoliang/ui
+        UI_DIR = ../daodaoliang/ui/QComputerInfo
 
-        OBJECTS_DIR = ../daodaoliang/obj
+        OBJECTS_DIR = ../daodaoliang/obj/QComputerInfo
 }
 

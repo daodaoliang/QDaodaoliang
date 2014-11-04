@@ -28,25 +28,22 @@ FORMS    += ./form/popdialogdemo.ui \
 RESOURCES += ./res/QBasicUiKitResource.qrc
 
 INCLUDEPATH += ./inc/ \
-                ./form/
+               ./form/
 win32 {
     message(the QBasicUiKitDemo will create in folder: ../daodaoliang)
         DESTDIR = ../../daodaoliang/bin
 
-        MOC_DIR = ../../daodaoliang/moc
+        MOC_DIR = ../../daodaoliang/moc/QBasicUiKitDemo
 
-        RCC_DIR = ../../daodaoliang/rcc
+        RCC_DIR = ../../daodaoliang/rcc/QBasicUiKitDemo
 
-        UI_DIR = ../../daodaoliang/ui
+        UI_DIR = ../../daodaoliang/ui/QBasicUiKitDemo
 
-        OBJECTS_DIR = ../../daodaoliang/obj
+        OBJECTS_DIR = ../../daodaoliang/obj/QBasicUiKitDemo
 }
 
 #inport pro's depends files
 include(./QBasicUiKitDemo_depends.pri)
-
-#import Lib's header file
-include(./../../QBaseUiKit/QBaseUiKit_inc.pri)
 
 #import QtSingleApp file
 include(./../../QtSingleApplication/qtsingleapplication.pri)

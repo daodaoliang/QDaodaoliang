@@ -1,5 +1,5 @@
 TEMPLATE = subdirs
-
+CONFIG += ordered
 SUBDIRS += \
-    QBasicUiKitDemo \
-    QComputerInfoDemo
+    QComputerInfoDemo \
+    QBasicUiKitDemo

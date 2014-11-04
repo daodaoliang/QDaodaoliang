@@ -13,22 +13,20 @@ CONFIG   -= app_bundle
 
 #include pro's depends
 include(./QComputerInfoDemo_depends.pri)
-#include dll's header
-include(./../../QComputerInfo/QComputerInfo_inc.pri)
 
 TEMPLATE = app
 
 SOURCES += main.cpp
 
 win32 {
-    message(the QBasicUiKitDemo will create in folder: ../daodaoliang)
+    message(the QComputerInfoDemo will create in folder: ../daodaoliang)
         DESTDIR = ../../daodaoliang/bin
 
-        MOC_DIR = ../../daodaoliang/moc
+        MOC_DIR = ../../daodaoliang/moc/QComputerInfoDemo
 
-        RCC_DIR = ../../daodaoliang/rcc
+        RCC_DIR = ../../daodaoliang/rcc/QComputerInfoDemo
 
-        UI_DIR = ../../daodaoliang/ui
+        UI_DIR = ../../daodaoliang/ui/QComputerInfoDemo
 
-        OBJECTS_DIR = ../../daodaoliang/obj
+        OBJECTS_DIR = ../../daodaoliang/obj/QComputerInfoDemo
 }
