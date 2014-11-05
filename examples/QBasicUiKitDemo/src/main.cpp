@@ -35,15 +35,15 @@ int main(int argc, char *argv[])
     demoFadeWidget.beginFadeShow(3);
     //QEncryptionKit
     QEncryptionKit demoEncryptionKit;
-    QString tempStr("abcdefghijkLMNOPQRSTUVWXYZ0123456789");
+    QString tempStr("IMISSYOU");
     qDebug()<<"string:"<<tempStr;
     demoEncryptionKit.stringByKaiser(tempStr,-2);
     qDebug()<<"Kaiser encode:"<<tempStr;
     demoEncryptionKit.stringByKaiser(tempStr,2);
     qDebug()<<"Kaiser dncode:"<<tempStr;
-    tempStr = demoEncryptionKit.stringDESEncode(tempStr,"123456789");
+    tempStr = demoEncryptionKit.stringDESEncode(tempStr,"12345678");
     qDebug()<<"DES encode:"<<tempStr;
-    tempStr = demoEncryptionKit.stringDESDecode(tempStr,"123456789");
+    tempStr = demoEncryptionKit.stringDESDecode(tempStr,"12345678");
     qDebug()<<"DES dncode:"<<tempStr;
     //MiniDump 方案[2]
     app.setActivationWindow(&demoPopDialog);

@@ -1,4 +1,5 @@
 ﻿#include "qencryptionkit.h"
+#include <QDebug>
 
 QEncryptionKit::QEncryptionKit(QObject *parent):
     QObject(parent)
@@ -45,5 +46,5 @@ QString QEncryptionKit::stringDESEncode(const QString &param_data, const QString
 
 QString QEncryptionKit::stringDESDecode(const QString &param_data, const QString &param_key)
 {
-    return DecodeMain(param_data,param_key);
+    return DecodeMain(param_data,param_key);;
 }

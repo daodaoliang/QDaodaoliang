@@ -51,7 +51,7 @@ public:
 
     /*!
      * \brief stringDES
-     *  采用DES加密方式加密字符串
+     *  采用DES加密方式加密字符串(长度为8)
      * \param param_data
      *  原始数据
      * \param param_key
@@ -63,7 +63,7 @@ public:
 
     /*!
      * \brief stringDESDecode
-     *  采用DES加密方式解密字符串
+     *  采用DES加密方式解密字符串(长度为8)
      * \param param_data
      *  加密字符串
      * \param param_key
