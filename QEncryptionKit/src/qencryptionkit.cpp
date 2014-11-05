@@ -1,6 +1,5 @@
 ﻿#include "qencryptionkit.h"
 
-
 QEncryptionKit::QEncryptionKit(QObject *parent):
     QObject(parent)
 {
@@ -37,4 +36,14 @@ bool QEncryptionKit::stringByKaiser(QString &param_data, qint8 param_key)
         param_data[temp_index] = QChar(tempChar);
     }
     return true;
+}
+
+QString QEncryptionKit::stringDESEncode(const QString &param_data, const QString &param_key)
+{
+    return EncodeMain(param_data,param_key);
+}
+
+QString QEncryptionKit::stringDESDecode(const QString &param_data, const QString &param_key)
+{
+    return DecodeMain(param_data,param_key);
 }

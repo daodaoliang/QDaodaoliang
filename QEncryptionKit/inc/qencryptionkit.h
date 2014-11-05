@@ -4,6 +4,7 @@
 #include "qencryptionkit_global.h"
 #include <QObject>
 #include <QCryptographicHash>
+#include "qdesencode.h"
 
 /*!
  * \brief The QEncryptionKit class
@@ -39,7 +40,7 @@ public:
 
     /*!
      * \brief stringByKaiser
-     *  采用凯撒加密方式加密字符串
+     *  采用凯撒加解密方式加密字符串
      * \param param_data
      *  原始数据
      * \param param_key
@@ -47,6 +48,30 @@ public:
      * \return
      */
     bool stringByKaiser(QString &param_data,qint8 param_key);
+
+    /*!
+     * \brief stringDES
+     *  采用DES加密方式加密字符串
+     * \param param_data
+     *  原始数据
+     * \param param_key
+     *  密钥
+     * \return
+     *  密文
+     */
+    QString stringDESEncode(const QString &param_data,const QString &param_key);
+
+    /*!
+     * \brief stringDESDecode
+     *  采用DES加密方式解密字符串
+     * \param param_data
+     *  加密字符串
+     * \param param_key
+     *  密钥
+     * \return
+     *  明文
+     */
+    QString stringDESDecode(const QString &param_data,const QString &param_key);
 };
 
 #endif // QENCRYPTIONKIT_H

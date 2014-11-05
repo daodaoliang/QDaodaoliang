@@ -41,6 +41,10 @@ int main(int argc, char *argv[])
     qDebug()<<"Kaiser encode:"<<tempStr;
     demoEncryptionKit.stringByKaiser(tempStr,2);
     qDebug()<<"Kaiser dncode:"<<tempStr;
+    tempStr = demoEncryptionKit.stringDESEncode(tempStr,"123456789");
+    qDebug()<<"DES encode:"<<tempStr;
+    tempStr = demoEncryptionKit.stringDESDecode(tempStr,"123456789");
+    qDebug()<<"DES dncode:"<<tempStr;
     //MiniDump 方案[2]
     app.setActivationWindow(&demoPopDialog);
     //崩溃测试
