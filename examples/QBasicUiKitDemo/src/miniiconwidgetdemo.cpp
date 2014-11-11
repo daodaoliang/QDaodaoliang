@@ -11,6 +11,7 @@ MiniIconWidgetDemo::MiniIconWidgetDemo(QWidget *parent) :
     mMinIconWidget->setPixmap(QPixmap(":/image/icon_sun.png"));
     setWindowFlags(Qt::WindowStaysOnTopHint);
     connect(mMinIconWidget,SIGNAL(signalMiniIconClicked()),this,SLOT(showMiniDemoWindow()));
+    ui->widget->setCircleInfo(":/image/icon_sun.png",5);
 }
 
 MiniIconWidgetDemo::~MiniIconWidgetDemo()
@@ -49,9 +50,13 @@ void MiniIconWidgetDemo::hideMiniDemoWindow()
 void MiniIconWidgetDemo::on_pushButton_2_clicked()
 {
     ui->stackedWidget->rotate(1);
+    ui->widget->stopAnimation();
+    ui->widget->startAnimation();
 }
 
 void MiniIconWidgetDemo::on_pushButton_clicked()
 {
     ui->stackedWidget->rotate(0);
+    ui->widget->stopAnimation();
+    ui->widget->startAnimation();
 }

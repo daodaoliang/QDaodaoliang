@@ -32,12 +32,16 @@
      <widget class="QWidget" name="page">
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
-        <widget class="QLabel" name="label_2">
+        <widget class="QBasicCircleAnimationWidget" name="widget" native="true">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_2" native="true">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(255, 170, 255);</string>
-         </property>
-         <property name="text">
-          <string>我是第二页</string>
          </property>
         </widget>
        </item>
@@ -73,6 +77,12 @@
    <class>QBasicRotatingStackedWidget</class>
    <extends>QStackedWidget</extends>
    <header>qbasicrotatingstackedwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QBasicCircleAnimationWidget</class>
+   <extends>QWidget</extends>
+   <header>qbasiccircleanimationwidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

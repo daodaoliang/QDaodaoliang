@@ -3,6 +3,7 @@ HEADERS += ./inc/qbasicformpopdialog.h \
             ./inc/qbasicformsnowlabel.h \
             ./inc/qbasicformminiconwidget.h \
             ./inc/qbasicformfadewidget.h \
-            ./inc/qbasicrotatingstackedwidget.h
+            ./inc/qbasicrotatingstackedwidget.h \
+            ./inc/qbasiccircleanimationwidget.h
 
 
