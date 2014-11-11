@@ -45,3 +45,13 @@ void MiniIconWidgetDemo::hideMiniDemoWindow()
     mMinIconWidget->show();
     setWindowState(Qt::WindowMinimized);
 }
+
+void MiniIconWidgetDemo::on_pushButton_2_clicked()
+{
+    ui->stackedWidget->rotate(1);
+}
+
+void MiniIconWidgetDemo::on_pushButton_clicked()
+{
+    ui->stackedWidget->rotate(0);
+}
