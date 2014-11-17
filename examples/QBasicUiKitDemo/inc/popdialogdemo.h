@@ -2,6 +2,8 @@
 #define POPDIALOGDEMO_H
 
 #include <QDialog>
+#include <QPixmap>
+#include <QPainter>
 #include "qbasicformpopdialog.h"
 #include "qbasicformmoveablewidget.h"
 
@@ -20,8 +22,13 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+protected:
+    void paintEvent(QPaintEvent *e);
+    void showEvent(QShowEvent *e);
+
 private:
     Ui::PopDialogDemo *ui;
+    QPixmap m_shadow;
 };
 
 #endif // POPDIALOGDEMO_H

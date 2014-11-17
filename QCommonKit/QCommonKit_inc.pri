@@ -1,0 +1,1 @@
+HEADERS += inc/qcommonkit.h\

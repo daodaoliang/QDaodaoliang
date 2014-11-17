@@ -14,14 +14,14 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgba(170, 170, 127, 50);</string>
+   <string notr="true">background-color: rgba(170, 85, 255, 100);</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="topMargin">
     <number>0</number>
    </property>
    <property name="rightMargin">
-    <number>0</number>
+    <number>10</number>
    </property>
    <item row="0" column="1">
     <widget class="QPushButton" name="pushButton">

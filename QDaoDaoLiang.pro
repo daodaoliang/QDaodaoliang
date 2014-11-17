@@ -6,3 +6,4 @@ SUBDIRS += \
     QBaseUiKit \
     QComputerInfo \
     examples \
+    QCommonKit

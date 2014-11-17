@@ -20,9 +20,14 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+protected:
+    void paintEvent(QPaintEvent *e);
+    void showEvent(QShowEvent *e);
+
 private:
     Ui::FormFadeWidgetDemo *ui;
     QEncryptionKit m_encryption_instance;
+    QPixmap m_shadow;
 };
 
 #endif // FORMFADEWIDGETDEMO_H
