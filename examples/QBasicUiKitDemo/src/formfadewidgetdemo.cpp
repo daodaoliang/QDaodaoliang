@@ -51,9 +51,11 @@ void FormFadeWidgetDemo::paintEvent(QPaintEvent *e)
     painter.drawPixmap(tTopLeft, m_shadow, topLeft);
     painter.drawPixmap(tBottomLeft, m_shadow, bottomLeft);
     painter.drawPixmap(tBottomRight, m_shadow, bottomRight);
+    QBasicFormFadeWidget::paintEvent(e);
 }
 
 void FormFadeWidgetDemo::showEvent(QShowEvent *e)
 {
     repaint();
+    QBasicFormFadeWidget::showEvent(e);
 }

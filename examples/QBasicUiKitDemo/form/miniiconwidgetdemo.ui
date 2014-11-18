@@ -27,7 +27,7 @@
    <item>
     <widget class="QBasicRotatingStackedWidget" name="stackedWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="page">
       <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -55,7 +55,7 @@
           <string notr="true">background-color: rgb(255, 255, 127);</string>
          </property>
          <property name="text">
-          <string>我是第一页</string>
+          <string>点击最小化按钮</string>
          </property>
         </widget>
        </item>
@@ -76,7 +76,7 @@
   <customwidget>
    <class>QBasicRotatingStackedWidget</class>
    <extends>QStackedWidget</extends>
-   <header>qbasicrotatingstackedwidget.h</header>
+   <header location="global">qbasicrotatingstackedwidget.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>

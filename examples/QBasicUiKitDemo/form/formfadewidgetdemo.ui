@@ -14,7 +14,9 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgba(170, 85, 255, 100);</string>
+   <string notr="true">#FormFadeWidgetDemo{
+background-color: rgba(170, 85, 255, 100);
+}</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="topMargin">
@@ -39,7 +41,7 @@
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 0, 0);
-background-color: rgb(85, 85, 127);</string>
+background-color: rgb(255, 255, 127);</string>
      </property>
      <property name="text">
       <string>X</string>
@@ -51,7 +53,7 @@ background-color: rgb(85, 85, 127);</string>
       <bool>true</bool>
      </property>
      <property name="flat">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
     </widget>
    </item>

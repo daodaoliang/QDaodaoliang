@@ -6,7 +6,10 @@
 #include <QLabel>
 #include <QStackedWidget>
 #include "qbaseuikit_global.h"
-
+/*!
+ * \brief The QBasicRotatingStackedWidget class
+ *  堆栈页基础动画组件
+ */
 class QBASEUIKITSHARED_EXPORT QBasicRotatingStackedWidget : public QStackedWidget
 {
     Q_OBJECT
