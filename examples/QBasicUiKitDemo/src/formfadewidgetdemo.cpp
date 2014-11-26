@@ -23,6 +23,7 @@ void FormFadeWidgetDemo::on_pushButton_clicked()
 
 void FormFadeWidgetDemo::paintEvent(QPaintEvent *e)
 {
+    //画阴影边框方案[1]
     QPainter painter(this);
     //source
     QRect bottom(5, 136, 200, 7);

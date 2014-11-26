@@ -15,7 +15,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">#FormFadeWidgetDemo{
-background-color: rgba(170, 85, 255, 100);
+background-color: rgba(170, 85, 255, 30);
 }</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
