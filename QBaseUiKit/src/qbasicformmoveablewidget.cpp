@@ -8,7 +8,7 @@ QBasicFormMoveableWidget::QBasicFormMoveableWidget(QWidget *parent) :
 {
     isLeftPressDown = false;
     this->dir = NONE;
-    this->setWindowFlags(Qt::FramelessWindowHint|Qt::WindowSystemMenuHint );
+    this->setWindowFlags(Qt::FramelessWindowHint);
     this->setMouseTracking(true);
 }
 

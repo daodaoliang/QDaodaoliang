@@ -4,5 +4,13 @@
         <file>image/icon_github-alt.png</file>
         <file>image/icon_sun.png</file>
         <file>image/window_shadow.png</file>
+        <file>image/shadow_bottom.png</file>
+        <file>image/shadow_corner1.png</file>
+        <file>image/shadow_corner2.png</file>
+        <file>image/shadow_corner3.png</file>
+        <file>image/shadow_corner4.png</file>
+        <file>image/shadow_left.png</file>
+        <file>image/shadow_right.png</file>
+        <file>image/shadow_top.png</file>
     </qresource>
 </RCC>

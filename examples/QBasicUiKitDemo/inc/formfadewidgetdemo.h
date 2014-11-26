@@ -25,6 +25,18 @@ protected:
     void showEvent(QShowEvent *e);
 
 private:
+    /*!
+     * \brief drawShadowPlanA
+     *  画边框阴影方案A
+     */
+    void drawShadowPlanA();
+
+    /*!
+     * \brief drawShadowPlanA
+     *  画边框阴影方案B
+     */
+    void drawShadowPlanB();
+private:
     Ui::FormFadeWidgetDemo *ui;
     QEncryptionKit m_encryption_instance;
     QPixmap m_shadow;

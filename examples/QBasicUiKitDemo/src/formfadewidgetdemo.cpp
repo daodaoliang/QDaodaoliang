@@ -23,7 +23,46 @@ void FormFadeWidgetDemo::on_pushButton_clicked()
 
 void FormFadeWidgetDemo::paintEvent(QPaintEvent *e)
 {
-    //画阴影边框方案[1]
+    //drawShadowPlanA();
+    drawShadowPlanB();
+    QBasicFormFadeWidget::paintEvent(e);
+}
+
+void FormFadeWidgetDemo::showEvent(QShowEvent *e)
+{
+    repaint();
+    QBasicFormFadeWidget::showEvent(e);
+}
+
+void FormFadeWidgetDemo::drawShadowPlanB()
+{
+    //画阴影边框方案[B]
+    QPainter painter(this);
+    QList<QPixmap> pixmaps;
+    pixmaps.append(QPixmap(":/image/shadow_left.png"));
+    pixmaps.append(QPixmap(":/image/shadow_right.png"));
+    pixmaps.append(QPixmap(":/image/shadow_top.png"));
+    pixmaps.append(QPixmap(":/image/shadow_bottom.png"));
+    pixmaps.append(QPixmap(":/image/shadow_corner1.png"));
+    pixmaps.append(QPixmap(":/image/shadow_corner2.png"));
+    pixmaps.append(QPixmap(":/image/shadow_corner3.png"));
+    pixmaps.append(QPixmap(":/image/shadow_corner4.png"));
+    painter.drawPixmap(0,0,20,20,pixmaps[4]);
+    painter.drawPixmap(this->width() - 20,0,20,20,pixmaps[5]);
+    painter.drawPixmap(0,this->height() - 20,20,20,pixmaps[6]);
+    painter.drawPixmap(this->width() - 20,this->height() - 20,20,20,pixmaps[7]);
+    painter.drawPixmap(0,20,20,this->height() - 40,pixmaps[0].scaled(20,this->height() - 40));
+    painter.drawPixmap(this->width() - 20,20,20,this->height() - 40,pixmaps[1].scaled(20,this->height() - 40));
+    painter.drawPixmap(20,0,this->width() - 40,20,pixmaps[2].scaled(this->width() - 40,20));
+    painter.drawPixmap(20,this->height() - 20,this->width() - 40,20,pixmaps[3].scaled(this->width() - 40,20));
+    painter.setPen(Qt::NoPen);
+    painter.setBrush(Qt::white);
+    painter.drawRoundedRect(QRect(18,18,this->width() - 36,this->height() - 36),2.0f,2.0f);
+}
+
+void FormFadeWidgetDemo::drawShadowPlanA()
+{
+    //画阴影边框方案[A]
     QPainter painter(this);
     //source
     QRect bottom(5, 136, 200, 7);
@@ -52,11 +91,8 @@ void FormFadeWidgetDemo::paintEvent(QPaintEvent *e)
     painter.drawPixmap(tTopLeft, m_shadow, topLeft);
     painter.drawPixmap(tBottomLeft, m_shadow, bottomLeft);
     painter.drawPixmap(tBottomRight, m_shadow, bottomRight);
-    QBasicFormFadeWidget::paintEvent(e);
-}
 
-void FormFadeWidgetDemo::showEvent(QShowEvent *e)
-{
-    repaint();
-    QBasicFormFadeWidget::showEvent(e);
+    painter.setPen(Qt::NoPen);
+    painter.setBrush(Qt::white);
+    painter.drawRoundedRect(QRect(18,18,this->width() - 36,this->height() - 36),2.0f,2.0f);
 }
