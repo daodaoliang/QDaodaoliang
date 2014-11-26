@@ -31,25 +31,43 @@ enum Direction{
     NONE
 };
 
+/*!
+ * \brief The MOVEPLAN enum
+ *  窗体移动方案
+ */
+enum MOVEPLAN{
+    PLANA,
+    PLANB
+};
+
+/*!
+ * \brief The QBasicFormMoveableWidget class
+ *  可移动、可拖拽修改尺寸widget
+ */
+
 class QBASEUIKITSHARED_EXPORT QBasicFormMoveableWidget : public QWidget
 {
     Q_OBJECT
 public:
     explicit QBasicFormMoveableWidget(QWidget *parent = 0);
-    
+    MOVEPLAN move_plan() const;
+
 protected:
     void mousePressEvent(QMouseEvent *event);
     void mouseMoveEvent(QMouseEvent *event);
     void mouseReleaseEvent(QMouseEvent *event);
     void paintEvent(QPaintEvent *event);
+    bool winEvent(MSG *message, long *result);
 
 private:
     void region(const QPoint &cursorGlobalPoint);
+    void setMove_plan(const MOVEPLAN &move_plan);
 
 private:
-    bool isLeftPressDown;
-    QPoint dragPosition;
-    Direction dir;
+    bool isLeftPressDown_;
+    QPoint dragPosition_;
+    Direction dir_;
+    MOVEPLAN move_plan_;
 };
 
 #endif // QBASICFORMMOVEABLEWIDGET_H
